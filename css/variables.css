@@ -1,0 +1,39 @@
+:root {
+    /* Colors */
+    --color-primary: #5932EA;
+    --color-secondary: #9197B3;
+    --color-background: #f9fafb;
+    --color-white: #ffffff;
+    --color-border: #eee;
+    --color-gray: #838383;
+    --color-success: #16C098;
+    --color-error: #DF0404;
+    --color-hover-bg: #efeffe;
+    --color-hover-text: #5a55f2;
+
+    /* Typography */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+    --font-size-small: 0.75rem; /* 12px */
+    --font-size-base: 0.875rem; /* 14px */
+    --font-size-medium: 1.125rem; /* 18px */
+    --font-size-large: 1.5rem; /* 24px */
+
+    /* Spacing */
+    --spacing-xs: 0.3125rem; /* 5px */
+    --spacing-sm: 0.625rem; /* 10px */
+    --spacing-md: 1.25rem; /* 20px */
+    --spacing-lg: 1.875rem; /* 30px */
+    --spacing-xl: 2.5rem; /* 40px */
+
+    /* Border Radius */
+    --border-radius-sm: 0.25rem; /* 4px */
+    --border-radius-md: 0.5rem; /* 8px */
+    --border-radius-lg: 1.875rem; /* 30px */
+
+    /* Shadows */
+    --box-shadow-sm: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* 0 2px 5px */
+    --box-shadow-md: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1); /* 0 2px 10px */
+}

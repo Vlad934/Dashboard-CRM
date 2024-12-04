@@ -1,0 +1,87 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard CRM
+    link(rel="stylesheet" href="css/styles1.css")
+  body
+    .dashboard
+      aside.dashboard__sidebar
+        .dashboard__logo 
+            img(src="assets/logo/logo.svg" alt="CRM Logo" width="195" height="39")
+            span v.01
+        ul.dashboard__menu
+          li.dashboard__menu-item
+            a(href="#" title="Dashboard")
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#key-square")
+                span Dashboard
+          li.dashboard__menu-item
+            a(href="#" title="Product")
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#3d-square 1")
+                span Product
+          li.dashboard__menu-item.dashboard__menu-item--active
+            a(href="#" title="Customers") 
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#user-square 1")
+                span Customers
+          li.dashboard__menu-item
+            a(href="#" title="Income") 
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#wallet-money-2")
+                span Income
+          li.dashboard__menu-item
+            a(href="#" title="Promote")
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#discount-shape 1")
+                span Promote
+          li.dashboard__menu-item
+            a(href="#" title="Help")
+                svg.icon(width="24" height="24")
+                    use(xlink:href="assets/icons/sprite.svg#message-question 1")
+                span Help
+        .dashboard__profile
+          img.dashboard__profile-image(src="assets/account-image.jpg" alt="Profile Picture")
+          .dashboard__profile-info
+            span.dashboard__profile-name Evano
+            p.dashboard__profile-title Project Manager
+
+      section.dashboard__main
+        .dashboard__header
+          h1.dashboard__greeting Hello Evano 👋,
+          button.dashboard__open-nav.mobile-only(aria-label="Toggle Navigation Menu")
+            svg.icon(width="32" height="32")
+              use(xlink:href="assets/icons/sprite.svg#burger-menu")
+        .dashboard__content
+          .dashboard__content-header
+            div
+              h2.dashboard__content-title All Customers
+              p.dashboard__content-subtitle Active Members
+            .dashboard__search
+              input.dashboard__search-input(type="text" placeholder="Search")
+          table.table
+            thead.table__head
+              tr.table__row
+                th.table__cell Customer Name
+                th.table__cell Company
+                th.table__cell Phone Number
+                th.table__cell Email
+                th.table__cell Country
+                th.table__cell.center Status
+            tbody.table__body
+              // Content dynamically inserted with JS
+          .dashboard__pagination
+            span.dashboard__pagination-info Showing data 1 to 8 of 256K entries
+            .dashboard__pagination-buttons
+              button.pagination__button.pagination__button--prev(data-page="prev" aria-label="Go to previous page")
+              button.pagination__button.pagination__button--active(data-page="1" aria-label="Go to page 1") 1
+              button.pagination__button(data-page="2" aria-label="Go to page 2") 2
+              button.pagination__button(data-page="3" aria-label="Go to page 3") 3
+              button.pagination__button(data-page="4" aria-label="Go to page 4") 4
+              span.pagination__dots ...
+              button.pagination__button(data-page="40" aria-label="Go to page 40") 40
+              button.pagination__button.pagination__button--next(data-page="next" aria-label="Go to next page")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    script(src="js/animations.js")
+    script(src="js/script.js")
